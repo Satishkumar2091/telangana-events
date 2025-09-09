@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Select Event</title>
+</head>
+<body>
+    <h2>Available Events</h2>
+    <ul>
+        {% for event in events %}
+        <li>
+            {{ event.name }} - {{ event.location }} ({{ event.date }})
+            <a href="{{ url_for('quotation', event_id=event.id) }}">Get Quotation</a>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Quotation - {{ event.name }}</title>
+</head>
+<body>
+    <h2>Quotation Request for {{ event.name }}</h2>
+    <form method="POST">
+        Name: <input type="text" name="name" required><br><br>
+        Email: <input type="email" name="email" required><br><br>
+        No. of Guests: <input type="number" name="guests" required><br><br>
+        Requirements: <textarea name="details" required></textarea><br><br>
+        <button type="submit">Submit Request</button>
+    </form>
+</body>
+</html>
